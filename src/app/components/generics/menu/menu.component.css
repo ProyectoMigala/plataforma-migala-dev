@@ -1,0 +1,17 @@
+span {
+    padding-right: 1rem;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 3px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
+}
