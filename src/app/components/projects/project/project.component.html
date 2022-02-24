@@ -1,0 +1,30 @@
+<h1><a href="{{Project.url}}" target="_blank">{{Project.name}}</a></h1>
+<hr>
+
+<div class="container">
+    <div class="tables">
+        <div class="tables-issues">
+            <h2>Issues</h2>
+            <table-page [displayedColumns]="issuesDisplayedColumns" [dataSource]="issuesDataSource">
+            </table-page>
+        </div>
+        <div class="tables-events">
+            <h2>Events</h2>
+            <table-page [displayedColumns]="eventsDisplayedColumns" [dataSource]="eventsDataSource">
+            </table-page>
+        </div>
+    </div>
+    <h2>Contributors</h2>
+    <div class="contributors">
+        <ng-container *ngFor="let contributor of contributors">
+            <div class="contributor">
+                <a href="{{contributor.url}}" target="_blank">
+                    <img class="contributor-img" src="{{contributor.img}}" alt="">
+                    <div class="contributor-name">
+                        <p><span>{{contributor.username}}</span></p>
+                    </div>
+                </a>
+            </div>
+        </ng-container>
+    </div>
+</div>

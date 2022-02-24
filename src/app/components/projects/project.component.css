@@ -36,3 +36,12 @@
     font-size: 18px;
   }
 }
+
+.content {
+  margin-left: 13%;
+  padding: 1px 16px;
+}
+
+.content-item {
+  margin-bottom: 25px;
+}

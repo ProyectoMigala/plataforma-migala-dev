@@ -10,6 +10,7 @@ import { PROJECTS } from './project'
 export class ProjectComponent implements OnInit {
 
     projects!: any;
+    project!: any;
 
     constructor(
         private readonly _ref: ChangeDetectorRef
@@ -20,7 +21,12 @@ export class ProjectComponent implements OnInit {
     ngOnInit() {
     }
 
+    updateProject(project: any) {
+        this.project = project;
+    }
+
     private getData() {
         this.projects = PROJECTS
+        this.project = this.projects[0];
     }
 }

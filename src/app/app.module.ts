@@ -18,12 +18,14 @@ import { InterceptService } from './components/generics/utils/interceptor.interc
 // generics
 import { MenuComponent } from './components/generics/menu/menu.component';
 import { FooterComponent } from './components/generics/footer/footer.component';
+import { TableComponent } from './components/generics/table/table.component';
 
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
 
 // components
 import { ProjectComponent } from './components/projects/project.component';
+import { ProjectGenericComponent } from './components/projects/project/project.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
@@ -31,7 +33,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AppComponent,
     MenuComponent,
     FooterComponent,
+    TableComponent,
     ProjectComponent,
+    ProjectGenericComponent,
     NotFoundComponent
   ],
   imports: [
