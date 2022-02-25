@@ -4,17 +4,14 @@ import { PROJECTS } from './project'
 @Component({
     selector: 'project-component',
     templateUrl: './project.component.html',
-    styleUrls: ['./project.component.css'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+    styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
 
     projects!: any;
     project!: any;
 
-    constructor(
-        private readonly _ref: ChangeDetectorRef
-    ) {
+    constructor() {
         this.getData();
     }
 

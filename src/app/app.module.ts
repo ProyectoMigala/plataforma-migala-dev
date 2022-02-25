@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule } from '@angular/common/http';
+
 // material
 import { MaterialModule } from './material.module';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -22,10 +24,11 @@ import { TableComponent } from './components/generics/table/table.component';
 
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
+import { GithubService } from './components/generics/utils/github.service';
 
 // components
 import { ProjectComponent } from './components/projects/project.component';
-import { ProjectGenericComponent } from './components/projects/project/project.component';
+import { ProjectGenericComponent } from './components/projects/project/projectGeneric.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
@@ -45,7 +48,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     MatGridListModule,
     MatCardModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [
     InterceptService,
@@ -55,6 +59,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
       multi: true
     },
     LoaderService,
+    GithubService
   ],
   bootstrap: [AppComponent]
 })
