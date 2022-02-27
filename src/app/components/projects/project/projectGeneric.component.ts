@@ -39,8 +39,38 @@ export class ProjectGenericComponent implements OnInit {
             .subscribe(
                 (data: any) => {
                     this.eventsDataSource = data.map((event: any) => {
-                        return { name: event.type }
-                    });
+                        if (event.type === "CreateEvent") {
+
+                            if (event.payload.ref_type === 'repository') {
+                                return {
+                                    name: "Repositorio creado",
+                                    url: this.Project.url
+                                }
+
+                            }
+
+                            return {
+                                name: `${event.payload.ref_type} Created: ${event.payload.ref}`,
+                                url: this.Project.url
+                            }
+                        }
+
+                        if (event.type === "DeleteEvent") {
+                            return {
+                                name: `${event.payload.ref_type} Deleted: ${event.payload.ref}`,
+                                url: this.Project.url
+                            }
+                        }
+
+                        if (event.type === "PullRequestEvent") {
+                            return {
+                                name: `PR ${event.payload.action}: ${event.payload.pull_request.title}`,
+                                url: event.payload.pull_request.html_url
+                            }
+                        }
+
+                        return undefined
+                    }).filter((event: any) => event !== undefined);
                 }
             );
 
