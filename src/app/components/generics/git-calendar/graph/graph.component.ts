@@ -106,9 +106,9 @@ export class GraphComponent implements OnInit {
       case 7:
       case 8:
       case 9:
-        return this.colors[3];
+        return this.colors[2];
       default:
-        return this.colors[4];
+        return this.colors[3];
     }
   }
 }
