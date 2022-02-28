@@ -81,12 +81,16 @@ export class ProjectGenericComponent implements OnInit {
             .subscribe(
                 (data: any) => {
                     this.contributors = data.map((contributor: any) => {
+                        if (contributor.login === 'dependabot[bot]') {
+                            return undefined
+                        }
+
                         return {
                             username: contributor.login,
                             url: contributor.html_url,
                             img: contributor.avatar_url
                         }
-                    });
+                    }).filter((event: any) => event !== undefined);
                 }
             );
 
