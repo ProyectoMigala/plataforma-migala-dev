@@ -1,13 +1,15 @@
-<div class="sidenav">
-  <ng-container *ngFor="let item of projects">
-    <h1 [ngClass]="{'sidenav-selected': project.name === item.name}" (click)="updateProject(item)">
-      {{item.name}}
-    </h1>
-  </ng-container>
-</div>
+<div class="main-wrapper">
+  <div class="sidenav">
+    <ng-container *ngFor="let item of projects">
+      <h1 [ngClass]="{'sidenav-selected': project.name === item.name}" (click)="updateProject(item)">
+        {{item.name}}
+      </h1>
+    </ng-container>
+  </div>
 
-<div class="content">
-  <div class="content-item" *ngFor="let repo of project.repos;">
-    <project-generic-component [Project]="repo"></project-generic-component>
+  <div class="content">
+    <div class="content-item" *ngFor="let repo of project.repos;">
+      <project-generic-component [Project]="repo"></project-generic-component>
+    </div>
   </div>
 </div>

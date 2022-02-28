@@ -1,10 +1,5 @@
 .main {
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 0px 10px;
-
     position: relative;
-    top: 15%;
 
     min-height: 100%;
     height: auto !important;

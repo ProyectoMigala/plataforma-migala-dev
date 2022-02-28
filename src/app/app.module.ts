@@ -30,6 +30,7 @@ import { GithubService } from './components/generics/utils/github.service';
 import { ProjectComponent } from './components/projects/project.component';
 import { ProjectGenericComponent } from './components/projects/project/projectGeneric.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     TableComponent,
     ProjectComponent,
     ProjectGenericComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
