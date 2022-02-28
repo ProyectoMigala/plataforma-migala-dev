@@ -1,5 +1,6 @@
 span {
     padding-right: 1rem;
+    cursor: pointer;
 }
 
 .menu-buttons {

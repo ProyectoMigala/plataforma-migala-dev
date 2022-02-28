@@ -1,7 +1,7 @@
 <div class="navbar">
     <mat-progress-bar *ngIf="loading" mode="query" [color]="'accent'"></mat-progress-bar>
     <mat-toolbar fxLayout="row" color="primary">
-        <span>{{logo_page}}</span>
+        <span routerLink="/">{{logo_page}}</span>
         <div class="menu-buttons">
             <button mat-button *ngFor="let item of menuItems" fxHide.xs [fxShow]="item.showOnDesktop"
                 [fxShow.xs]="item.showOnMobile" [fxShow.sm]="item.showOnTablet" [routerLink]="item.path">

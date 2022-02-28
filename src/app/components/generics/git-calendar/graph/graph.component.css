@@ -54,19 +54,6 @@ ul {
     border-radius: 2px;
 }
 
-.squares li[data-level='1'] {
-    background-color: #ffa1a1;
-}
-
-.squares li[data-level='2'] {
-    background-color: #ff5555;
-}
-
-.squares li[data-level='3'] {
-    background-color: #c70000;
-}
-
-
 /**
 * Tooltip Styles
 */
