@@ -19,7 +19,7 @@ export class ProjectGenericComponent implements OnInit {
 
     contributors: any;
 
-    data!: any;
+    github_data!: any;
 
     constructor(private githubService: GithubService) {
     }
@@ -93,11 +93,11 @@ export class ProjectGenericComponent implements OnInit {
         this.githubService.getCommitSctivity(this.Project)
             .subscribe(
                 (data: any) => {
-                    this.data = []
+                    this.github_data = []
                     let DayDate = Utils.toDateTime(data[0].week);
                     let allDays = data.map((commit: any) => commit.days).reduce((a: any, b: any) => a.concat(b));
 
-                    this.data.push([DayDate.toLocaleString(), `${allDays[0]}`])
+                    this.github_data.push([DayDate.toLocaleString(), `${allDays[0]}`])
 
                     for (let index = 1; index < allDays.length; index++) {
                         const day = allDays[index]
@@ -105,7 +105,7 @@ export class ProjectGenericComponent implements OnInit {
                         var result = new Date(DayDate)
                         result.setDate(result.getDate() + 1)
 
-                        this.data.push([result.toLocaleString(), `${day}`])
+                        this.github_data.push([result.toLocaleString(), `${day}`])
 
                         DayDate = result
                     }
