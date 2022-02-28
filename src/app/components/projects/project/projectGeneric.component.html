@@ -14,6 +14,11 @@
             </table-page>
         </div>
     </div>
+    <div class="commits">
+        <h2>Contributions in the last year</h2>
+        <lib-ng-git-calendar [data]="github_data">
+        </lib-ng-git-calendar>
+    </div>
     <h2>Contributors</h2>
     <div class="contributors">
         <ng-container *ngFor="let contributor of contributors">
