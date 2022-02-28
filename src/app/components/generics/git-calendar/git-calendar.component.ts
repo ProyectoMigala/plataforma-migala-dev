@@ -4,9 +4,6 @@ import { Component, OnInit, Input } from '@angular/core';
     selector: 'lib-ng-git-calendar',
     template: `
     <lib-graph
-        [colorLevel1]="''+colorLevel1"
-        [colorLevel2]="''+colorLevel2"
-        [colorLevel3]="''+colorLevel3"
         [data] ="match"
     ></lib-graph>
   `,
@@ -21,13 +18,6 @@ export class GitCalendarComponent implements OnInit {
     @Input() set data(value: any) {
         this.match = value;
     }
-
-    @Input('colorLevel1')
-    colorLevel1!: any;
-    @Input('colorLevel2')
-    colorLevel2!: any;
-    @Input('colorLevel3')
-    colorLevel3!: any;
 
     constructor() {
     }

@@ -7,8 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GraphComponent implements OnInit {
 
-  k = "l"
-
   match: any;
   get data(): any {
     return this.match;
@@ -19,12 +17,13 @@ export class GraphComponent implements OnInit {
       this.setData();
     }
   }
-  @Input('colorLevel1')
-  colorLevel1!: string;
-  @Input('colorLevel2')
-  colorLevel2!: string;
-  @Input('colorLevel3')
-  colorLevel3!: string;
+
+  colors = [
+    "#9be9a8",
+    "#40c463",
+    "#30a14e",
+    "#216e39"
+  ]
 
   inicialHeight!: number;
   inicialWidth!: number;
@@ -98,14 +97,18 @@ export class GraphComponent implements OnInit {
         return '';
       case 1:
       case 2:
+        return this.colors[0];
       case 3:
-        return this.colorLevel1;
       case 4:
       case 5:
+        return this.colors[1];
       case 6:
-        return this.colorLevel2;
+      case 7:
+      case 8:
+      case 9:
+        return this.colors[3];
       default:
-        return this.colorLevel3;
+        return this.colors[4];
     }
   }
 }
