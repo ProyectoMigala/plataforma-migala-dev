@@ -21,6 +21,8 @@ import { InterceptService } from './components/generics/utils/interceptor.interc
 import { MenuComponent } from './components/generics/menu/menu.component';
 import { FooterComponent } from './components/generics/footer/footer.component';
 import { TableComponent } from './components/generics/table/table.component';
+import { GraphComponent } from './components/generics/git-calendar/graph/graph.component';
+import { GitCalendarComponent } from './components/generics/git-calendar/git-calendar.component';
 
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
@@ -39,7 +41,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     TableComponent,
     ProjectComponent,
     ProjectGenericComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GraphComponent,
+    GitCalendarComponent
   ],
   imports: [
     BrowserModule,
