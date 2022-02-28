@@ -41,3 +41,16 @@ img {
 .contributor-name span {
   font-weight: 500;
 }
+
+.commits {
+  display: flex;
+  flex-direction: column;
+}
+
+.commits h2 {
+  margin-bottom: 0;
+}
+
+.commits lib-ng-git-calendar {
+  align-self: center;
+}
