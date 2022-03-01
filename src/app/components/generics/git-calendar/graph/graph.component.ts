@@ -25,11 +25,6 @@ export class GraphComponent implements OnInit {
     "#216e39"
   ]
 
-  inicialHeight!: number;
-  inicialWidth!: number;
-  constanteHeight: number = 0;
-  constanteWidth: number = 0;
-
   dias: any = []
 
   realMatch: any = {}
@@ -50,8 +45,6 @@ export class GraphComponent implements OnInit {
   }
 
   setData() {
-    this.inicialHeight = window.screen.height;
-    this.inicialWidth = window.screen.width;
 
     for (let i = 0; i < this.match.length; i++) {
       this.realMatch[(new Date("" + this.match[i][0])).toDateString()] = this.match[i][1]
@@ -84,11 +77,6 @@ export class GraphComponent implements OnInit {
       var newDate = loop.setDate(loop.getDate() + 1);
       loop = new Date(newDate);
     }
-  }
-
-  onResize(event: any): void {
-    this.constanteHeight = event.target.innerHeight / this.inicialHeight;
-    this.constanteWidth = event.target.innerWidth / this.inicialWidth;
   }
 
   getColor(dia: any) {
