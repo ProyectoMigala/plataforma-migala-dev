@@ -27,7 +27,7 @@ jobs:
         npm run build:gh-pages
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
-        branch: gh-pages
+        branch: gh-pages # The branch the action should deploy to.
         folder: dist/plataforma-migala-dev
