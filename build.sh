@@ -1,0 +1,1 @@
+docker build -t plataforma-migala-dev:latest  .
