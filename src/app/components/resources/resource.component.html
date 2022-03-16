@@ -1,0 +1,15 @@
+<div class="main-wrapper">
+  <div class="sidenav">
+    <ng-container *ngFor="let item of resources">
+      <h1 [ngClass]="{'sidenav-selected': resource.name === item.name}" (click)="updateResource(item)">
+        {{item.name}}
+      </h1>
+    </ng-container>
+  </div>
+
+  <div class="content">
+    <div class="content-item" *ngFor="let repo of resource.repos;">
+      <resource-generic-component [resource]="repo"></resource-generic-component>
+    </div>
+  </div>
+</div>

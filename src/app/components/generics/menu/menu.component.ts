@@ -20,6 +20,13 @@ export class MenuComponent implements OnInit {
             path: 'projects',
         },
         {
+            label: 'Recursos',
+            showOnMobile: false,
+            showOnTablet: false,
+            showOnDesktop: true,
+            path: 'resources',
+        },
+        {
             label: 'Calendario',
             showOnMobile: false,
             showOnTablet: false,

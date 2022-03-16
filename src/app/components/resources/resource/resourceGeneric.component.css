@@ -1,0 +1,37 @@
+.example-card {
+  border-radius: 7.5px;
+  margin-bottom: 1.5rem;
+  background-color: #f7f6f6;
+  -webkit-box-shadow: 3px 3px 15px -1px #000000;
+  box-shadow: 3px 3px 10px -5px #000000;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.aling-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.aling-headers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+mat-card {
+  margin-bottom: 2rem;
+}
+
+mat-card button {
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 18px;
+}

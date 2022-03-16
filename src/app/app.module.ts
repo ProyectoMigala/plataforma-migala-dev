@@ -34,6 +34,9 @@ import { ProjectGenericComponent } from './components/projects/project/projectGe
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { CalendarComponent } from './components/calendars/calendar.component';
+import { ResourceComponent } from './components/resources/resource.component';
+import { ResourceGenericComponent } from './components/resources/resource/resourceGeneric.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +51,9 @@ import { CalendarComponent } from './components/calendars/calendar.component';
     NotFoundComponent,
     GraphComponent,
     GitCalendarComponent,
-    CalendarComponent
+    CalendarComponent,
+    ResourceGenericComponent,
+    ResourceComponent
   ],
   imports: [
     BrowserModule,
