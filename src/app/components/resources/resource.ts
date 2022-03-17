@@ -1,16 +1,6 @@
-// * https://programadorwebvalencia.com/cursos/sql/introducci%C3%B3n/
-// * https://www.youtube.com/watch?v=ANF1X42_ae4&list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU
-// * https://www.youtube.com/watch?v=zV0NywULR_4&list=PLHgpVrCyLWAoSkzNPYt9nhmtSlpXjtnju&index=2
 // * https://codecraft.tv/courses/angular/reactive-programming-with-rxjs/observables-and-rxjs/ 
 // * https://angular.io/guide/rx-library
-// * https://eloquentjs-es.thedojo.mx/
-// * https://www.udemy.com/course/programacion-para-principiantes/
-// * https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/
-// * https://www.udemy.com/course/html-hacia-angular/
-// * https://www.udemy.com/course/introduccion-a-la-programacion-con-python-juan-de-la-torre/
-// * https://www.udemy.com/course/wordpress-introduccion-practica-a-gutenberg-el-nuevo-editor/
 // * https://www.udemy.com/courses/search/?price=price-free&q=juan+gabriel+gomila+salas&sort=relevance&src=sac
-// * https://www.udemy.com/course/flutter-nivel-facil-aprende-a-desarrollar-tu-primera-app/
 
 
 export var RESOURCE_TAGS = {
@@ -63,6 +53,46 @@ export var RESOURCE_TAGS = {
         "name": "SQL",
         "color": "#ff00ff",
         "color-font": "black"
+    },
+    "git": {
+        "name": "GIT",
+        "color": "#89e051",
+        "color-font": "black"
+    },
+    "rxjs": {
+        "name": "RxJS",
+        "color": "#c2185b",
+        "color-font": "black"
+    },
+    "vscode": {
+        "name": "VS Code",
+        "color": "#0066b8",
+        "color-font": "white"
+    },
+    "python": {
+        "name": "Python",
+        "color": "#3572A5",
+        "color-font": "white"
+    },
+    "php": {
+        "name": "PHP",
+        "color": "#4F5D95",
+        "color-font": "white"
+    },
+    "wordpress": {
+        "name": "WordPress",
+        "color": "#4F5D95",
+        "color-font": "white"
+    },
+    "flutter": {
+        "name": "Flutter",
+        "color": "#0468d7",
+        "color-font": "white"
+    },
+    "dart": {
+        "name": "Dart",
+        "color": "#00B4AB",
+        "color-font": "white"
     }
 }
 
@@ -90,6 +120,88 @@ export var RESOURCES = [
         tags: [
             "course",
             "sql"
+        ],
+    },
+    {
+        tittle: "Curso SQL",
+        url: "https://programadorwebvalencia.com/cursos/sql/introducci%C3%B3n/",
+        img: "https://programadorwebvalencia.com/img/courses/sql/databaseicon.jpg",
+        tags: [
+            "course",
+            "sql"
+        ],
+    },
+    {
+        tittle: "Curso Git",
+        url: "https://www.youtube.com/watch?v=ANF1X42_ae4&list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU",
+        img: "https://img.youtube.com/vi/ANF1X42_ae4/0.jpg",
+        tags: [
+            "course",
+            "git"
+        ],
+    },
+    {
+        tittle: "Curso de Angular - RxJS",
+        url: "https://www.youtube.com/watch?v=zV0NywULR_4&list=PLHgpVrCyLWAoSkzNPYt9nhmtSlpXjtnju",
+        img: "https://img.youtube.com/vi/zV0NywULR_4/0.jpg",
+        tags: [
+            "course",
+            "rxjs",
+            "angular"
+        ],
+    },
+    {
+        tittle: "Eloquent JavaScript",
+        url: "https://eloquentjs-es.thedojo.mx/",
+        img: "https://eloquentjs-es.thedojo.mx/img/cover.jpg",
+        tags: [
+            "book",
+            "javascript"
+        ],
+    },
+    {
+        tittle: "Visual Studio Code: Mejora tu velocidad para codificar",
+        url: "https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/",
+        img: "https://img-c.udemycdn.com/course/480x270/2259510_13b4_2.jpg",
+        tags: [
+            "course",
+            "vscode"
+        ],
+    },
+    {
+        tittle: "Angular: Convierte cualquier template HTML en una WebAPP",
+        url: "https://www.udemy.com/course/html-hacia-angular/",
+        img: "https://img-c.udemycdn.com/course/480x270/1311964_639f_5.jpg",
+        tags: [
+            "course",
+            "angular"
+        ],
+    },
+    {
+        tittle: "Introducción a la Programación con Python",
+        url: "https://www.udemy.com/course/introduccion-a-la-programacion-con-python-juan-de-la-torre/",
+        img: "https://img-c.udemycdn.com/course/480x270/2573656_24be.jpg",
+        tags: [
+            "course",
+            "python"
+        ],
+    },
+    {
+        tittle: "WordPress Introducción Practica a Gutenberg el Nuevo Editor",
+        url: "https://www.udemy.com/course/wordpress-introduccion-practica-a-gutenberg-el-nuevo-editor/",
+        img: "https://img-b.udemycdn.com/course/480x270/1920428_a413_4.jpg?secure=3vYSnLTESUx5_MGIYTPfWw%3D%3D%2C1647562626",
+        tags: [
+            "course",
+            "wordpress"
+        ],
+    },
+    {
+        tittle: "Flutter, nivel fácil : Aprende a desarrollar tu primera App",
+        url: "https://www.udemy.com/course/flutter-nivel-facil-aprende-a-desarrollar-tu-primera-app/",
+        img: "https://img-c.udemycdn.com/course/480x270/3601990_908d_3.jpg",
+        tags: [
+            "course",
+            "flutter"
         ],
     }
 ]
