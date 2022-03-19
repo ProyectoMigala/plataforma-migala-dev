@@ -52,7 +52,7 @@ export var RESOURCE_TAGS = {
     "sql": {
         "name": "SQL",
         "color": "#ff00ff",
-        "colorfont": "black"
+        "colorfont": "white"
     },
     "git": {
         "name": "GIT",
@@ -62,7 +62,7 @@ export var RESOURCE_TAGS = {
     "rxjs": {
         "name": "RxJS",
         "color": "#c2185b",
-        "colorfont": "black"
+        "colorfont": "white"
     },
     "vscode": {
         "name": "VS Code",
