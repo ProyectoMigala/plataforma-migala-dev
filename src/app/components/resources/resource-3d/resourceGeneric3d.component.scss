@@ -25,6 +25,13 @@ mat-card button {
   font-size: 14px;
 }
 
+mat-card a img {
+  max-height: 250px;
+  max-width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 .aling-content {
   display: inline-flex;
   margin: 2px;
