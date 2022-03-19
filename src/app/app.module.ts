@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,9 @@ import { TableComponent } from './components/generics/table/table.component';
 import { GraphComponent } from './components/generics/git-calendar/graph/graph.component';
 import { GitCalendarComponent } from './components/generics/git-calendar/git-calendar.component';
 
+// pipes
+import { FilterPipe }  from './components/generics/utils/filter.pipe';
+
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
 import { GithubService } from './components/generics/utils/github.service';
@@ -34,6 +38,9 @@ import { ProjectGenericComponent } from './components/projects/project/projectGe
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { CalendarComponent } from './components/calendars/calendar.component';
+import { ResourceComponent } from './components/resources/resource.component';
+import { ResourceGenericComponent } from './components/resources/resource/resourceGeneric.component';
+
 
 @NgModule({
   declarations: [
@@ -48,10 +55,14 @@ import { CalendarComponent } from './components/calendars/calendar.component';
     NotFoundComponent,
     GraphComponent,
     GitCalendarComponent,
-    CalendarComponent
+    CalendarComponent,
+    ResourceGenericComponent,
+    ResourceComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,

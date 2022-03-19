@@ -1,0 +1,23 @@
+mat-card {
+  margin-bottom: 2rem;
+}
+
+mat-card mat-card-content {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+mat-card mat-card-content a {
+  text-decoration: none;
+  color: black;
+}
+
+mat-card button {
+  text-align: center;
+  font-size: 14px;
+}
+
+.aling-content {
+  display: inline-flex;
+  margin: 2px;
+}
