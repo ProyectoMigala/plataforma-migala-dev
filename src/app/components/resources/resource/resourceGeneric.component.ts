@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { RESOURCE_TAGS } from '../resource';
 
 @Component({
     selector: 'resource-generic-component',
@@ -8,17 +9,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResourceGenericComponent implements OnInit {
 
     @Input() resource!: any;
-
-    collapsed = true;
+    tags:any = RESOURCE_TAGS;
 
     constructor() {
-
     }
 
     ngOnInit() {
     }
 
-    collapCard() {
-        this.collapsed = !this.collapsed;
+    getStyle(tag: string) {
+        return {
+            'background-color': this.tags[tag].color,
+            'color': this.tags[tag].colorfont
+        }
     }
 }

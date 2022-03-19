@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,9 @@ import { FooterComponent } from './components/generics/footer/footer.component';
 import { TableComponent } from './components/generics/table/table.component';
 import { GraphComponent } from './components/generics/git-calendar/graph/graph.component';
 import { GitCalendarComponent } from './components/generics/git-calendar/git-calendar.component';
+
+// pipes
+import { FilterPipe }  from './components/generics/utils/filter.pipe';
 
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
@@ -53,10 +57,12 @@ import { ResourceGenericComponent } from './components/resources/resource/resour
     GitCalendarComponent,
     CalendarComponent,
     ResourceGenericComponent,
-    ResourceComponent
+    ResourceComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,

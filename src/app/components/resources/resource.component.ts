@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RESOURCES } from './resource'
 
 @Component({
@@ -10,6 +10,8 @@ export class ResourceComponent implements OnInit {
 
     resources!: any;
     resource!: any;
+    searchText: string = '';
+    gridColumns = 3;
 
     constructor() {
         this.getData();

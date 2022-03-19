@@ -1,15 +1,16 @@
 <div class="main-wrapper">
-  <div class="sidenav">
-    <ng-container *ngFor="let item of resources">
-      <h1 [ngClass]="{'sidenav-selected': resource.name === item.name}" (click)="updateResource(item)">
-        {{item.name}}
-      </h1>
-    </ng-container>
+  <div class="grid-item">
+    <mat-form-field class="search-bar">
+      <input matInput 
+         [(ngModel)]="searchText"  placeholder="Buscar">
+    </mat-form-field>
   </div>
-
   <div class="content">
-    <div class="content-item" *ngFor="let repo of resource.repos;">
-      <resource-generic-component [resource]="repo"></resource-generic-component>
+    <div fxLayout="row wrap" fxLayoutGap="20px grid">
+      <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%"
+        *ngFor="let resource of resources | filter : searchText">
+        <resource-generic-component [resource]="resource"></resource-generic-component>
+      </div>
     </div>
   </div>
 </div>

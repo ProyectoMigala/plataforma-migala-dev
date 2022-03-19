@@ -7,92 +7,92 @@ export var RESOURCE_TAGS = {
     "angular": {
         "name": "Angular",
         "color": "	#a6120d",
-        "color-font": "white",
+        "colorfont": "white",
     },
     "javascript": {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "color-font": "black",
+        "colorfont": "black",
     },
     "typescript": {
         "name": "TypeScript",
         "color": "#2b7489",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "react": {
         "name": "React",
         "color": "#61dafb",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "book": {
         "name": "Book",
         "color": "#ededed",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "video": {
         "name": "Book",
         "color": "#ededed",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "course": {
-        "name": "Book",
+        "name": "Course",
         "color": "#ededed",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "blog": {
-        "name": "Book",
+        "name": "Blog",
         "color": "#ededed",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "other": {
         "name": "Other",
         "color": "#ededed",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "sql": {
         "name": "SQL",
         "color": "#ff00ff",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "git": {
         "name": "GIT",
         "color": "#89e051",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "rxjs": {
         "name": "RxJS",
         "color": "#c2185b",
-        "color-font": "black"
+        "colorfont": "black"
     },
     "vscode": {
         "name": "VS Code",
         "color": "#0066b8",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "python": {
         "name": "Python",
         "color": "#3572A5",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "php": {
         "name": "PHP",
         "color": "#4F5D95",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "wordpress": {
         "name": "WordPress",
         "color": "#4F5D95",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "flutter": {
         "name": "Flutter",
         "color": "#0468d7",
-        "color-font": "white"
+        "colorfont": "white"
     },
     "dart": {
         "name": "Dart",
         "color": "#00B4AB",
-        "color-font": "white"
+        "colorfont": "white"
     }
 }
 
@@ -111,15 +111,6 @@ export var RESOURCES = [
         img: "https://img-c.udemycdn.com/course/480x270/1651564_846d_4.jpg",
         tags: [
             "course"
-        ],
-    },
-    {
-        tittle: "Curso SQL",
-        url: "https://www.pildorasinformaticas.es/course/curso-sql/",
-        img: "https://www.pildorasinformaticas.es/wp-content/uploads/2016/11/Caratula-SQL_B.jpg",
-        tags: [
-            "course",
-            "sql"
         ],
     },
     {
@@ -148,15 +139,6 @@ export var RESOURCES = [
             "course",
             "rxjs",
             "angular"
-        ],
-    },
-    {
-        tittle: "Eloquent JavaScript",
-        url: "https://eloquentjs-es.thedojo.mx/",
-        img: "https://eloquentjs-es.thedojo.mx/img/cover.jpg",
-        tags: [
-            "book",
-            "javascript"
         ],
     },
     {
@@ -203,5 +185,14 @@ export var RESOURCES = [
             "course",
             "flutter"
         ],
-    }
+    },
+    {
+        tittle: "Eloquent JavaScript",
+        url: "https://eloquentjs-es.thedojo.mx/",
+        img: "https://eloquentjs-es.thedojo.mx/img/cover.jpg",
+        tags: [
+            "book",
+            "javascript"
+        ],
+    },
 ]

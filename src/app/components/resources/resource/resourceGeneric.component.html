@@ -1,47 +1,15 @@
-<mat-card class="example-card">
-    <mat-card-header>
-
-        <div mat-card-avatar class="example-header-image"></div>
-
-        <div class="aling-headers">
-            <mat-card-title>Titulo</mat-card-title>
-            <mat-card-subtitle>Sub Titulo</mat-card-subtitle>
-        </div>
-
-        <div class="button-collapse">
-            <button mat-icon-button (click)="collapCard()">
-
-                <ng-container *ngIf="!collapsed; else lessIcon">
-                    <mat-icon>expand_less</mat-icon>
-                </ng-container>
-
-                <ng-template #lessIcon>
-                    <mat-icon>expand_more</mat-icon>
-                </ng-template>
-
-            </button>
-        </div>
-
-    </mat-card-header>
-
-    <mat-card-content *ngIf="!collapsed">
-        <hr>
-        <div class="aling-content">
-
-            <h2>cont 1</h2>
-            <h4>cont 1</h4>
-            <button>
-                <mat-icon>local_shipping</mat-icon>
-            </button>
-        </div>
-        <hr>
-        <div class="aling-content">
-            <h2>cont 2</h2>
-            <h4>cont 2</h4>
-            <button>
-                <mat-icon>local_shipping</mat-icon>
-            </button>
-        </div>
+<mat-card class="mat-elevation-z4">
+    <a href="{{resource.url}}" target="_blank">
+        <img mat-card-image [src]="resource.img">
+    </a>
+    <mat-card-content>
+        <a href="{{resource.url}}" target="_blank">
+            <p>{{ resource.tittle }}</p>
+        </a>
     </mat-card-content>
-
+    <mat-card-actions>
+        <mat-chip-list class="aling-content" *ngFor="let tag of resource.tags; index as i;">
+            <mat-chip [ngStyle]="getStyle(tag)" selected>{{ tags[tag].name }}</mat-chip>
+        </mat-chip-list>
+    </mat-card-actions>
 </mat-card>
