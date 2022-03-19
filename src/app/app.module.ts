@@ -26,7 +26,10 @@ import { GraphComponent } from './components/generics/git-calendar/graph/graph.c
 import { GitCalendarComponent } from './components/generics/git-calendar/git-calendar.component';
 
 // pipes
-import { FilterPipe }  from './components/generics/utils/filter.pipe';
+import { FilterPipe } from './components/generics/utils/filter.pipe';
+
+// directives
+import { MaterialElevationDirective } from './components/generics/utils/material-elevation.directive';
 
 // services
 import { LoaderService } from './components/generics/utils/loader.service';
@@ -40,6 +43,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CalendarComponent } from './components/calendars/calendar.component';
 import { ResourceComponent } from './components/resources/resource.component';
 import { ResourceGenericComponent } from './components/resources/resource/resourceGeneric.component';
+import { Resource3DGenericComponent } from './components/resources/resource-3d/resourceGeneric3d.component';
 
 
 @NgModule({
@@ -58,7 +62,9 @@ import { ResourceGenericComponent } from './components/resources/resource/resour
     CalendarComponent,
     ResourceGenericComponent,
     ResourceComponent,
-    FilterPipe
+    FilterPipe,
+    MaterialElevationDirective,
+    Resource3DGenericComponent
   ],
   imports: [
     BrowserModule,

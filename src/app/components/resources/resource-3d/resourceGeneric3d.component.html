@@ -1,0 +1,18 @@
+<div #card class="card-wrap">
+    <mat-card appMaterialElevation [ngStyle]="cardStyle()">
+        <a href="{{resource.url}}" target="_blank">
+            <img mat-card-image [src]="resource.img">
+        </a>
+        <mat-card-content>
+            <a href="{{resource.url}}" target="_blank">
+                <p>{{ resource.tittle }}</p>
+            </a>
+        </mat-card-content>
+        <mat-card-actions>
+            <mat-chip-list class="aling-content" *ngFor="let tag of resource.tags; index as i;">
+                <mat-chip [ngStyle]="getStyle(tag)" selected>{{ tags[tag].name }}</mat-chip>
+            </mat-chip-list>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
