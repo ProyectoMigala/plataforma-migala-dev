@@ -52,8 +52,8 @@ export class Resource3DGenericComponent implements OnInit {
     }
 
     private transformStyle() {
-        const tX = this.mousePX * -20;
-        const tY = this.mousePY * -10;
+        const tX = this.mousePX * -10;
+        const tY = this.mousePY * -5;
         return { transform: `rotateY(${tX}deg) rotateX(${tY}deg)` };
     }
     get nativeElement(): HTMLElement {
