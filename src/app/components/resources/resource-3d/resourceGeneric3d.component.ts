@@ -10,10 +10,12 @@ import { map, mergeWith, delay, share, repeat, switchMap, takeUntil } from 'rxjs
     styleUrls: ['./resourceGeneric3d.component.scss']
 })
 export class Resource3DGenericComponent implements OnInit {
-    height: any;
-    width: any;
+
     mouseX = 0;
     mouseY = 0;
+
+    @Input() height!: any;
+    @Input() width!: any;
 
     @Input() resource!: any;
     tags: any = RESOURCE_TAGS;
@@ -78,10 +80,5 @@ export class Resource3DGenericComponent implements OnInit {
             this.mouseY = e.mouseY;
         })
 
-    }
-
-    ngAfterViewInit() {
-        this.width = 500;
-        this.height = 500;
     }
 }

@@ -1,6 +1,4 @@
-
-
-.resources-main-wrapper{
+.resources-main-wrapper {
   padding: 10vmin 12vmin;
   display: flex;
   flex-flow: column;
@@ -8,7 +6,7 @@
   align-items: center;
 }
 
-.resources-header{
+.resources-header {
   font-weight: bold;
   font-size: calc(16px + 2vmin);
   padding: 10vmin 0 15vmin;
@@ -17,8 +15,7 @@
   text-align: center;
 }
 
-
-button{
+button {
   width: 320px;
   height: calc(20px + 4vmin);
   background: #673ab7;

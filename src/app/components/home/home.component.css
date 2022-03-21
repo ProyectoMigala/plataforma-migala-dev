@@ -2,6 +2,7 @@
 .home-wrapper{
   width: 100%;
   margin: 0;
+  overflow-x: hidden; 
 }
 
 .home-header-wrapper {
