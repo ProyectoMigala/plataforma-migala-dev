@@ -1,0 +1,50 @@
+
+.about-project-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+section{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vmin 0;
+
+  border-top: 1px solid #673ab7;
+  margin: 0 12vmin;
+}
+
+.header-about{
+  font-weight: bold;
+  font-size: calc(16px + 2vmin);
+  padding: 10px 0;
+}
+
+.about-content{
+  padding: 0 20vmin;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+
+.about-paragraph {
+  width: 100%;
+  font-size: calc(10px + 2vmin);
+  font-weight: lighter;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+button{
+  width: 320px;
+  height: calc(20px + 4vmin);
+  background: #673ab7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: calc(8px + 2vmin);
+  align-self: center;
+  border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+<div class="resources-main-wrapper animated-slow fadeInRight">
+  <div class="resources-header"> Recursos gratuitos </div>
+
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="20px grid">
+      <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%"
+           *ngFor="let resource of resources">
+        <resource-3d-generic-component [resource]="resource"></resource-3d-generic-component>
+      </div>
+    </div>
+  </div>
+
+  <button routerLink="/resources">Conoce más</button>
+</div>

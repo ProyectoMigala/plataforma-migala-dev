@@ -44,6 +44,8 @@ import { CalendarComponent } from './components/calendars/calendar.component';
 import { ResourceComponent } from './components/resources/resource.component';
 import { ResourceGenericComponent } from './components/resources/resource/resourceGeneric.component';
 import { Resource3DGenericComponent } from './components/resources/resource-3d/resourceGeneric3d.component';
+import { AboutProjectComponent } from './components/home/about-project/about-project.component';
+import { ResourcesMinComponent } from './components/home/resources-min/resources-min.component';
 
 
 @NgModule({
@@ -64,7 +66,9 @@ import { Resource3DGenericComponent } from './components/resources/resource-3d/r
     ResourceComponent,
     FilterPipe,
     MaterialElevationDirective,
-    Resource3DGenericComponent
+    Resource3DGenericComponent,
+    AboutProjectComponent,
+    ResourcesMinComponent
   ],
   imports: [
     BrowserModule,

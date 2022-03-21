@@ -1,0 +1,31 @@
+
+
+.resources-main-wrapper{
+  padding: 10vmin 12vmin;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resources-header{
+  font-weight: bold;
+  font-size: calc(16px + 2vmin);
+  padding: 10vmin 0 15vmin;
+  border-top: 1px solid #673ab7;
+  width: 100%;
+  text-align: center;
+}
+
+
+button{
+  width: 320px;
+  height: calc(20px + 4vmin);
+  background: #673ab7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: calc(8px + 2vmin);
+  align-self: center;
+  border-radius: 10px;
+}
