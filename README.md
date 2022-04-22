@@ -1,3 +1,5 @@
+[![Build and Deploy](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml/badge.svg?branch=main)](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml)
+
 # PlataformaMigalaDev
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
