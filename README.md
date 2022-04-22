@@ -1,4 +1,4 @@
-[![Build and Deploy](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml/badge.svg?branch=main)](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml)
+[![Build and Deploy](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml/badge.svg?branch=main)](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/build-deploy.yml) [![pages-build-deployment](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/ProyectoMigala/plataforma-migala-dev/actions/workflows/pages/pages-build-deployment)
 
 # PlataformaMigalaDev
 
