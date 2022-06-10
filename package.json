@@ -7,8 +7,7 @@
     "build": "ng build",
     "build:gh-pages": "ng build --base-href=/plataforma-migala-dev/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "update": "ng update @angular/material@14"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
