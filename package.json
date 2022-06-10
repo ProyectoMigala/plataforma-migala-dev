@@ -7,7 +7,8 @@
     "build": "ng build",
     "build:gh-pages": "ng build --base-href=/plataforma-migala-dev/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "update": "ng update @angular/core@14 @angular/cli@14"
   },
   "private": true,
   "dependencies": {
@@ -32,7 +33,6 @@
     "@angular/compiler-cli": "~13.2.5",
     "@types/jasmine": "~4.0.3",
     "jasmine-core": "~4.1.1",
-    "karma": "~6.3.19",
     "karma": "~6.3.20",
     "karma-chrome-launcher": "~3.1.1",
     "karma-coverage": "~2.2.0",
