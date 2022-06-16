@@ -23,5 +23,25 @@ export var PROJECTS = [
                 organization: "ProyectoMigala"
             }
         ]
+    },
+    {
+        name: "Telegram Bot Migala",
+        repos: [
+            {
+                url: "https://github.com/ProyectoMigala/MigalaTelegramBot",
+                name: "MigalaTelegramBot",
+                organization: "ProyectoMigala"
+            }
+        ]
+    },
+    {
+        name: "Landing Page Migala",
+        repos: [
+            {
+                url: "https://github.com/ProyectoMigala/MigalaLandingPage",
+                name: "MigalaLandingPage",
+                organization: "ProyectoMigala"
+            }
+        ]
     }
 ]
