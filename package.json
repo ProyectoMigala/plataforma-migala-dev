@@ -19,7 +19,7 @@
     "@angular/flex-layout": "^13.0.0-beta.38",
     "@angular/forms": "^14.0.2",
     "@angular/material": "^14.0.1",
-    "@angular/platform-browser": "^14.0.1",
+    "@angular/platform-browser": "^14.0.2",
     "@angular/platform-browser-dynamic": "^14.0.2",
     "@angular/router": "^14.0.2",
     "bytes": "^3.1.2",
